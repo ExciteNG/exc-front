@@ -1,0 +1,77 @@
+.CartTable-container{
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+}
+
+.cartTable-box{
+    display:block;
+    padding: 20px;
+}
+
+.CartTable-container .cartTable-box .cart-header-text{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+
+
+.CartTable-container .cartTable-box .cart-item-text{
+    font-size: 14px;
+    color: black;
+}
+
+.CartTable-container .cartTable-box .cart-item-image-container{
+    width: 100px;
+    height: 60px;
+    padding-bottom:10px ;
+}
+
+
+/* Orders Design starts here */
+
+.OrderTable-container{
+    margin-top: 20px;
+    
+}
+
+.OrderTable-box{
+    display:block;
+    padding: 20px;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+}
+
+.Order-header-text{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    text-align: right;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+
+.Order-item-text{
+    font-size: 14px;
+    color: black;
+    text-align: right;
+    font-weight: bold;
+     font-weight: 400;
+     font-family:Arial, Helvetica, sans-serif;
+     
+}
+
+
+.Order-item-cost {
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Orders Design ends here */
+
+
+
+
+
+

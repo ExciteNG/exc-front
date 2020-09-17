@@ -1,0 +1,19 @@
+.skeleton-layout .skeleton-layout-container{
+    display: grid;
+    grid-gap: 4px;
+    padding:0;
+    margin: 20px 0px 0px 0px;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.skeleton-layout .skeleton-item-list-container{
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: left;
+    color: black;
+    font-size: 1.1rem;
+    box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79);
+}

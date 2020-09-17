@@ -1,0 +1,545 @@
+/* Inline Display Category Boxes Ends here */
+
+body{
+  width: 100%;
+  height: 100%;
+}
+
+.new-container{
+  width: 100%;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.productCategoryBoxes ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+
+  .products-layout li .products-item-list .products-item-content .products-item-title {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 4px;
+    margin: 2px;
+    min-height: 60px;
+    text-align: center;
+}
+
+  .p-cat-1{
+    background-image: url('https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1595250099/contentservice/PromoCards4.jpg_SyP2HfXlD.jpg');
+
+  }
+
+  .p-cat-2{
+    background-image: url('https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1595250184/contentservice/PromoCards2.jpg_H1gMUzXlD.jpg');
+  }
+   
+  .p-cat-3{
+    background-image: url('https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1595250090/contentservice/PromoCards1.jpg_BkfhrfQlD.jpg');
+  }
+
+  .p-cat-4{
+    background-image: url('https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1595250091/contentservice/PromoCards2.jpg_HyM3rfmxw.jpg');
+  }
+   
+  /* Inline Display Category Boxes  for component */
+  
+  /* Inline Display Category Boxes */
+  
+  .popularCategories-intro-bar {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: #fff;
+    /* text-transform: uppercase; */
+    font-size: 1.1rem;
+    /* height: 45px; */
+    background-color: #383636;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+  
+  
+  .popularCategories-intro-bar p{
+    color:white;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 0px;
+    font-weight: 600;
+  
+  }
+  
+  .popularCategories ul {
+    display: grid;
+    grid-gap: 20px;
+    padding:0;
+    margin: 20px 0px 0px 0px;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .popularCategories li{
+   
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  
+  }
+  
+   
+  .popularCategories li .popularCategories-sections{
+    background-image: url('https://www-konga-com-res.cloudinary.com/image/upload/w_600,f_auto,fl_lossy,dpr_auto,q_auto/v1595215708/contentservice/5.jpg_SkEPyqGgw.jpg');
+    border: 1px solid #ccc;
+    box-shadow: 0 0px 0px rgba(104, 104, 104, 0.8);
+    padding: 20px;
+    font-size: 1rem;
+    height: 200px;
+    text-align: center;
+    border-radius: 16px;
+
+    
+  }
+   
+  .popularCategories li .productCategoryBoxes-sections .electronics{
+    background-image: url('https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1595250184/contentservice/PromoCards2.jpg_H1gMUzXlD.jpg');
+    
+  }
+
+  .popularCategories li .services{
+    background-image: url('https://www-konga-com-res.cloudinary.com/image/upload/w_auto,f_auto,fl_lossy,dpr_auto,q_auto/v1595250099/contentservice/PromoCards4.jpg_SyP2HfXlD.jpg');
+ 
+  }
+
+  .productCategoryBoxes li .fashion{
+    background-image: url('https://www-konga-com-res.cloudinary.com/image/upload/w_600,f_auto,fl_lossy,dpr_auto,q_auto/v1572956060/v3_homepage/categories/categoryBanners_Fashion.png');
+   
+  }
+
+  
+  /* Inline Display Category Boxes  */
+  
+
+/* Regitser Now */
+
+.signUp-section{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none; 
+    background-color: whites;
+  }
+
+.signUp-section .signUp-field{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    
+}
+
+.signUp-section .signUp-field .signUp-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.signUp-section .signUp-field .signUp-container-header{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-family: "HCo Gotham",sans-serif;;
+}
+
+.signUp-section  .signUp-field .signUp-button{
+    text-align: center;
+    background-color: rgb(6, 155, 38);
+    border-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 48px;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    
+    margin:0px 0px 30px 0px;
+    border-radius: 5px;
+}
+/* Register Now ends here */
+
+
+/* Offers Container */
+
+
+/* Boxes */
+
+.offers-fitter{
+  padding:10px 290px 10px 290px;
+  background-color: rgb(41, 41, 41);
+}
+
+.offers-section {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ 
+}
+
+.offers-container {
+  background: white;
+  color:rgb(6, 155, 38);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 0px 0px 0px rgba(104, 104, 104, 0.8);
+  background-color: transparent;
+}
+
+.offers-container .offers-heading{
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+/* Boxes ends */
+
+/* Media Queries */
+.img-f{
+  height: 400px;
+  width: 60%;
+}
+
+
+/* Media Queries */
+
+.tiles{
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+
+.tiles .tiles-list{
+  display: block;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: left;
+    color: black;
+    font-size: 1.1rem;
+    /* box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79); */
+    border-radius: 12px;
+}
+
+.tiles .tiles-list .tiles-upper-content {
+  font-size: 38px;
+  /* margin: 0px 0px 17px 0px; */
+  /* padding: 20px; */
+}
+
+.tiles .tiles-list .tiles-upper-content h3{
+  font-size: 1rem;
+}
+
+.tiles .tiles-list .tiles-upper-content p{
+  font-size: 1rem;
+}
+
+.tiles-upper-lower p{
+  font-size: 1rem;
+  color:rgb(34, 177, 34);
+  /* padding-left: 30px;
+  padding-bottom: 20px;   */
+}
+
+.tiles .tiles-list .tiles-lower-content p{
+  font-size: 1rem;
+  padding-left: 30px;
+  padding-bottom: 20px;  
+}
+
+/*Searching */
+
+.search-fitter{
+  /* border: 2px solid yelloq; */
+  /* margin: 5px 10px 5px 10px; */
+  /* margin-top: 10px; */
+  /* padding: 20px 40px 20px 40px; */
+}
+
+.search-bar{
+  /* margin-top: 30px; */
+  /* margin-left: 30%; */
+  /* padding: 0px 150px 0px 150px; */
+  /* width: 200px; */
+  /* border-top: 1px solid rgb(230, 226, 226); */
+  /* width: 100%; */
+  margin-top: 1rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar .search-bar-intro-header{
+  text-align:center;
+  font-size: 30px;
+
+}
+
+.a-input {
+ /* margin-left: 200px; */
+width: 35%;
+padding: 15px 20px;
+border: 1px solid rgb(179, 165, 165);
+/* border-radius: 5px; */
+font-weight: bold;
+
+}
+
+.a-input2 {
+  /* margin-left: 200px; */
+ width: 35%;
+ padding: 15px 20px;
+ border: 1px solid rgb(179, 165, 165);
+ /* border-radius: 5px; */
+ font-weight: bold;
+ 
+ }
+
+.a-search-button{
+  background: rgb(6, 155, 38);
+color: white;
+width: 150px;
+height: 58px;
+margin-left: 5px;
+/* border-radius: 5px; */
+}
+
+
+@media (max-width: 768px) {
+
+  .search-fitter{
+    /* border: 2px solid yelloq; */
+    /* margin: 5px 10px 5px 10px; */
+    /* margin-top: 10px; */
+    /* padding: 20px 40px 20px 40px; */
+    /* padding: 20px;
+    margin: 10px; */
+    margin-bottom: 20px;
+  }
+
+  .search-bar{
+    /* padding: 0px 150px 0px 150px; */
+  /* width: 200px; */
+  /* border-top: 1px solid rgb(230, 226, 226); */
+
+  /* width: 100%; */
+  display: grid;
+  max-width: 100%;
+  width: 100%;
+  /* margin-top:24rem; */
+  margin-bottom: 20px;
+  text-align: center;
+   
+  }
+
+  .a-input {
+    /* margin-left: 200px; */
+   width: 100%;
+   padding: 15px 20px;
+   border: 1px solid rgb(179, 165, 165);
+   /* border-radius: 5px; */
+   font-weight: bold;
+   
+   }
+   
+   .a-input2 {
+     /* margin-left: 200px; */
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid rgb(179, 165, 165);
+    /* border-radius: 5px; */
+    font-weight: bold;
+    margin-top: 10px;
+    
+    }
+   
+   .a-search-button{
+     background: rgb(6, 155, 38);
+   color: white;
+   width: 150px;
+   height: 58px;
+   margin-left: 5px;
+   margin-top: 10px;
+   }
+
+  .tiles{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none; 
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+
+  .tiles .tiles-list{
+    display: block;
+      text-decoration: none;
+      padding: 1rem;
+      text-align: left;
+      color: black;
+      font-size: 1.1rem;
+      /* box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79); */
+      border-radius: 12px;
+  }
+
+  .tiles .tiles-list .tiles-upper-content {
+    font-size: 38px;
+    margin: 0px 0px 17px 0px;
+    padding: 20px;
+  }
+
+  .tiles .tiles-list .tiles-upper-content h3{
+    font-size: 1.3rem;
+  }
+
+  .tiles .tiles-list .tiles-upper-content p{
+    font-size: 1rem;
+  }
+
+  .tiles-upper-lower{
+    padding-left: 20px;
+  }
+
+  .tiles .tiles-list .tiles-lower-content {
+    font-size: 38px;
+    padding-left: 30px;
+    padding-bottom: 20px;  
+  }
+
+  /* sign-up sectiom */
+  .signUp-section{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none; 
+    background-color: whites;
+  }
+
+  .signUp-section .signUp-field{
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    
+  }
+
+  .signUp-section .signUp-field .signUp-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .signUp-section .signUp-field .signUp-container-header{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: black;
+    font-family: "HCo Gotham",sans-serif;;
+  }
+
+  .signUp-section  .signUp-field .signUp-button{
+    text-align: center;
+    background-color: rgb(6, 155, 38);
+    border-color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    width: 200px;
+    height: 48px;
+    color: white;
+    padding: 0px 0px 0px 0px;
+    
+    margin:0px 0px 30px 0px;
+    border-radius: 5px;
+  }
+
+}
+
+/* 500px */
+@media (max-width: 500px) {
+
+  .a-input {
+  /* margin-left: 200px; */
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid rgb(179, 165, 165);
+  /* border-radius: 5px; */
+  font-weight: bold; 
+  }
+   
+   .a-input2 {
+     /* margin-left: 200px; */
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid rgb(179, 165, 165);
+    /* border-radius: 5px; */
+    font-weight: bold;
+    
+    }
+   
+   .a-search-button{
+     background: rgb(6, 155, 38);
+   color: white;
+   width: 150px;
+   height: 58px;
+   margin-left: 5px;
+   /* margin-top: 10px; */
+   /* border-radius: 5px; */
+   }
+
+
+}
+
+.get-started-button{
+  text-align: center;
+  background-color: #fdd000;
+  border-color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  width: 200px;
+  height: 3rem;
+  color: black;
+  padding: 0px 0px 0px 0px;
+  margin:0px 0px 30px 0px;
+  border-radius: 5px; 
+  /* box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset; */
+
+}

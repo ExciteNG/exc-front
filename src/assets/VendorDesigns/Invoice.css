@@ -1,0 +1,123 @@
+.invoice-form-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(5, 1fr); 
+    padding: 20px 0px 20px 0px;
+}
+
+.invoice-form-container {
+    
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    
+  }
+  
+
+  .invoice-table-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border: 0px solid #eee;
+    box-shadow: 0 0 0px rgba(0, 0, 0, .15);
+
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.invoice-table-heading-list-title{
+    font-size: 20px;
+    color: black;
+}
+
+
+
+.invoice-form-inline {  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+   .label {
+    margin: 5px 10px 5px 0;
+  }
+ 
+.invoice-form-textbox{
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 100px;
+    border-radius: 4px;
+    width: 400px;
+    font-size: 14px;
+}
+
+  .invoice-form-input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    height: 40px;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 14px;
+  
+  }
+  
+ .invoice-form-button {
+    padding: 10px 20px;
+    background-color: rgb(10, 156, 17);
+    border-radius: 14px;
+    color: white;
+    height: 48px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100px;
+  }
+  
+  .invoice-form-inline  button:hover {
+    background-color: royalblue;
+  }
+  
+  @media (max-width: 800px) {
+    .invoice-form-inline input {
+      margin: 10px 0;
+    }
+    
+    .invoice-form-inline  {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+
+/** RTL **/
+.rtl {
+    direction: rtl;
+    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.rtl table {
+    text-align: right;
+}
+
+.rtl table tr td:nth-child(2) {
+    text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+    .invoice-box table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .invoice-box table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}

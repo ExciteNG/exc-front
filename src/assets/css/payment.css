@@ -1,0 +1,120 @@
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.priceCard-container {
+  padding: 4px;
+  margin: 4px;
+  border-radius: 5px;
+  background: white;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  
+}
+
+.priceCard-container ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.priceCard-Box{
+
+  padding: 20px 0px 0px 30px;
+}
+
+.priceCard-container li {
+  width: 100%;
+  height:100%;
+  display: block;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 1.1rem;
+  
+
+}
+
+.price-Name{
+  margin: 0px 0px 0px 20px;
+}
+
+.price-Name p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600px;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: 'Graphik Web',Helvetica,sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.25em;
+  font-weight: 500;
+  font-style: normal;
+  color: #111324;
+  width: 100%;
+  margin: 0 auto 14px;
+  padding: 0;
+
+  text-align: center;
+  color: #7856ff;
+  padding: 0 20px;
+}
+
+.price-Amount p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600px;
+  text-align: center;
+  font-size: 25px;
+
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  font-weight: 600;
+  font-size:40px;
+}
+
+
+.price-content{
+  margin-top: 20px;
+}
+
+.price-content p{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.price-content-button {
+  background-color: rgb(6, 131, 12);
+  border-color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  width: 100%;
+  height: 48px;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 5px;
+
+  width: 100%;
+  max-width: 247px;
+  margin-top: 20px;
+  
+  background-color: #7856ff;
+  color: #fff;
+  
+}

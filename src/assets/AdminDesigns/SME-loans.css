@@ -1,0 +1,16 @@
+.SME-loan-descripton-box{
+    padding: 20px;
+    
+}
+
+.SME-loan-descripton-box .SME-loan-descripton-content{
+    margin: 3px 0px 5px 0px;
+}
+
+.SME-loan-descripton-box .loans-heading{
+    font-size: 24px;
+}
+
+.SME-loan-descripton-box .loans-text{
+    font-size: 20px;
+}

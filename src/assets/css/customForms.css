@@ -1,0 +1,29 @@
+.order-container{
+    display: grid;
+    grid-gap: 20px;
+    margin: 0px 0px 0px 0px;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 0px solid green;
+    padding: 0px 90px 0px 90px;
+  }
+  
+
+  .order-container .order-form-box{  
+       display: block;
+      align-items: center;
+      padding-bottom: 32px;
+      box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+  } 
+  
+
+.order-form-width{
+    width: 400px;
+  }
+
+.order-form-box .order-form-heading h3{
+    font-size:30px;
+    font-weight: 600;
+    color: rgb(6, 155, 38);
+}
+  
