@@ -222,7 +222,7 @@
   /* border: 0px solid blue; */
   /* float: left; */
   width: 100%;
-  overflow: visible;
+  /* overflow: visible; */
   /* flex-grow: 3; */
   /* margin-bottom: 30px; */
   z-index: -1 !important;
