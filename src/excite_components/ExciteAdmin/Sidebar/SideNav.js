@@ -21,7 +21,7 @@ import MailIcon from '@material-ui/icons/Mail';
 import { faHamburger } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 
 const Profile_id_url  = host + `/stream/get_profile_id/`
@@ -96,20 +96,19 @@ const products_analysis_endpoint = host + `/analytics/product_views/`
             </MenuItem>
           </div>
         
-
+          <div  className = "menu-link">
+            <MenuItem 
+            className="menu-link-text"
+            component={Link} to="/admin-affiliates" >
+           Affiliate Marketing
+            </MenuItem>
+          </div>
+        
           <div  className = "menu-link">
             <MenuItem 
             className="menu-link-text"
             component={Link} to="/admin-sme-loans-list/" >
             SME Funding
-            </MenuItem>
-          </div>
-
-          <div  className = "menu-link">
-            <MenuItem 
-            className="menu-link-text"
-            component={Link} to="/admin-affiliates" >
-              Affiliate Marketing
             </MenuItem>
           </div>
         

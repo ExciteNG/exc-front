@@ -54,7 +54,7 @@ const Condition = ['New', 'Foriegn Used']
 const QualificationType = ['SSCE','HND' ,'BSC','MSC','PHD']
 const yearExp = ['1 Years','2 Years','3 Years' , '4 Years']
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 
 

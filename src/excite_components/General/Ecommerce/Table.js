@@ -70,7 +70,7 @@ export default function OrderTable(props) {
     };
     console.log()
    
-      await axios.get(`https://backend-entr.herokuapp.com/retail/remove-item/${id}/`)
+      await axios.get(`http://127.0.0.1:8000/retail/remove-item/${id}/`)
       .then(res =>{
         if (res.status == 200){
           openNotification(res.data['Message'])

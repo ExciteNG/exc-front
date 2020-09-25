@@ -68,17 +68,15 @@ class LoginForm extends React.Component {
     return (
 
             <>
-  
+   
                   <div className="access-form-layout">
                             <div className="access-form-image">
                               <div className="access-form-bg-image">
                                 <div className="access-header-intro">
                                     <h3>
-                                      Excite Enterprise
+                                   Excite Enterprise
                                     </h3>
-                                    <p>
-                                      We Grow SMEs
-                                    </p>
+                                   
                                 </div>
                               </div>
                             </div>
@@ -133,7 +131,7 @@ class LoginForm extends React.Component {
 
                                                   <Form.Item >
                                                     <button
-                                                      class="form-button"
+                                                      className="form-button"
                                                     htmlType="submit">
                                                       Login
                                                     </button>
@@ -142,7 +140,7 @@ class LoginForm extends React.Component {
                                                   </Form>
 
                                      <div className="">
-                                              <Link to="/select-account/">
+                                              <Link to="/vendor-signup">
                                                <p className="access-suggestion">
                                               New here ? Sign Up
                                                 </p>
@@ -153,11 +151,11 @@ class LoginForm extends React.Component {
                                                <p className="access-suggestion">
                                                Forgot Password ? 
                                                 </p>
-                                              </Link>
+                                               </Link>
                                              
                                       </div>
 
-                                      </div>
+                                      </div> 
                            
                             </div>
                 </div>

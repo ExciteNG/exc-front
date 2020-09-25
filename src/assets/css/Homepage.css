@@ -1,17 +1,5 @@
 /* Inline Display Category Boxes Ends here */
 
-body{
-  width: 100%;
-  height: 100%;
-}
-
-.new-container{
-  width: 100%;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .productCategoryBoxes ul {
     display: grid;
     grid-gap: 20px;
@@ -163,10 +151,12 @@ body{
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    
+    
 }
 
 .signUp-section .signUp-field .signUp-container-header{
-    font-size: 2rem;
+    font-size: 64px;
     font-weight: bold;
     text-align: center;
     padding: 20px;
@@ -239,63 +229,48 @@ body{
   grid-gap: 20px;
   padding: 0;
   list-style: none; 
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .tiles .tiles-list{
   display: block;
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.8rem;
     text-align: left;
     color: black;
     font-size: 1.1rem;
-    /* box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79); */
+    box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79);
     border-radius: 12px;
 }
 
 .tiles .tiles-list .tiles-upper-content {
   font-size: 38px;
-  /* margin: 0px 0px 17px 0px; */
-  /* padding: 20px; */
+  margin: 0px 0px 170px 0px;
+  padding: 20px;
 }
 
 .tiles .tiles-list .tiles-upper-content h3{
-  font-size: 1rem;
+  font-size: 38px;
 }
 
 .tiles .tiles-list .tiles-upper-content p{
-  font-size: 1rem;
+  font-size: 20px;
 }
 
-.tiles-upper-lower p{
-  font-size: 1rem;
-  color:rgb(34, 177, 34);
-  /* padding-left: 30px;
-  padding-bottom: 20px;   */
-}
-
-.tiles .tiles-list .tiles-lower-content p{
-  font-size: 1rem;
-  padding-left: 30px;
-  padding-bottom: 20px;  
+.tiles .tiles-list .tiles-lower-content {
+  font-size: 38px;
+  padding: 20px;
 }
 
 /*Searching */
 
-.search-fitter{
-  /* border: 2px solid yelloq; */
-  /* margin: 5px 10px 5px 10px; */
-  /* margin-top: 10px; */
-  /* padding: 20px 40px 20px 40px; */
-}
-
 .search-bar{
   /* margin-top: 30px; */
   /* margin-left: 30%; */
-  /* padding: 0px 150px 0px 150px; */
+  padding: 0px 150px 0px 150px;
   /* width: 200px; */
   /* border-top: 1px solid rgb(230, 226, 226); */
-  /* width: 100%; */
-  margin-top: 1rem;
+  width: 100%;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -335,211 +310,41 @@ margin-left: 5px;
 /* border-radius: 5px; */
 }
 
+/* Number Counters  */
 
-@media (max-width: 768px) {
 
-  .search-fitter{
-    /* border: 2px solid yelloq; */
-    /* margin: 5px 10px 5px 10px; */
-    /* margin-top: 10px; */
-    /* padding: 20px 40px 20px 40px; */
-    /* padding: 20px;
-    margin: 10px; */
-    margin-bottom: 20px;
-  }
-
-  .search-bar{
-    /* padding: 0px 150px 0px 150px; */
-  /* width: 200px; */
-  /* border-top: 1px solid rgb(230, 226, 226); */
-
-  /* width: 100%; */
+.number-counter{
   display: grid;
-  max-width: 100%;
-  width: 100%;
-  /* margin-top:24rem; */
-  margin-bottom: 20px;
-  text-align: center;
-   
-  }
-
-  .a-input {
-    /* margin-left: 200px; */
-   width: 100%;
-   padding: 15px 20px;
-   border: 1px solid rgb(179, 165, 165);
-   /* border-radius: 5px; */
-   font-weight: bold;
-   
-   }
-   
-   .a-input2 {
-     /* margin-left: 200px; */
-    width: 100%;
-    padding: 15px 20px;
-    border: 1px solid rgb(179, 165, 165);
-    /* border-radius: 5px; */
-    font-weight: bold;
-    margin-top: 10px;
-    
-    }
-   
-   .a-search-button{
-     background: rgb(6, 155, 38);
-   color: white;
-   width: 150px;
-   height: 58px;
-   margin-left: 5px;
-   margin-top: 10px;
-   }
-
-  .tiles{
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none; 
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
-
-  .tiles .tiles-list{
-    display: block;
-      text-decoration: none;
-      padding: 1rem;
-      text-align: left;
-      color: black;
-      font-size: 1.1rem;
-      /* box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79); */
-      border-radius: 12px;
-  }
-
-  .tiles .tiles-list .tiles-upper-content {
-    font-size: 38px;
-    margin: 0px 0px 17px 0px;
-    padding: 20px;
-  }
-
-  .tiles .tiles-list .tiles-upper-content h3{
-    font-size: 1.3rem;
-  }
-
-  .tiles .tiles-list .tiles-upper-content p{
-    font-size: 1rem;
-  }
-
-  .tiles-upper-lower{
-    padding-left: 20px;
-  }
-
-  .tiles .tiles-list .tiles-lower-content {
-    font-size: 38px;
-    padding-left: 30px;
-    padding-bottom: 20px;  
-  }
-
-  /* sign-up sectiom */
-  .signUp-section{
-    display: grid;
-    grid-gap: 20px;
-    padding: 0;
-    list-style: none; 
-    background-color: whites;
-  }
-
-  .signUp-section .signUp-field{
-    display: block;
-    text-decoration: none;
-    text-align: left;
-    color: white;
-    text-transform: uppercase;
-    font-size: 1.1rem;
-    
-  }
-
-  .signUp-section .signUp-field .signUp-container{
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 16px;
-    padding-right: 16px;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-align: center;
-    align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-
-  .signUp-section .signUp-field .signUp-container-header{
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-    color: black;
-    font-family: "HCo Gotham",sans-serif;;
-  }
-
-  .signUp-section  .signUp-field .signUp-button{
-    text-align: center;
-    background-color: rgb(6, 155, 38);
-    border-color: #fff;
-    font-weight: 500;
-    font-size: 16px;
-    width: 200px;
-    height: 48px;
-    color: white;
-    padding: 0px 0px 0px 0px;
-    
-    margin:0px 0px 30px 0px;
-    border-radius: 5px;
-  }
-
+  grid-gap: 0px;
+  padding: 0;
+  list-style: none; 
+  grid-template-columns: repeat(1, 1fr);
 }
 
-/* 500px */
-@media (max-width: 500px) {
-
-  .a-input {
-  /* margin-left: 200px; */
-  width: 100%;
-  padding: 15px 20px;
-  border: 1px solid rgb(179, 165, 165);
-  /* border-radius: 5px; */
-  font-weight: bold; 
-  }
-   
-   .a-input2 {
-     /* margin-left: 200px; */
-    width: 100%;
-    padding: 15px 20px;
-    border: 1px solid rgb(179, 165, 165);
-    /* border-radius: 5px; */
-    font-weight: bold;
-    
-    }
-   
-   .a-search-button{
-     background: rgb(6, 155, 38);
-   color: white;
-   width: 150px;
-   height: 58px;
-   margin-left: 5px;
-   /* margin-top: 10px; */
-   /* border-radius: 5px; */
-   }
-
-
+.number-counter-container{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  
 }
 
-.get-started-button{
-  text-align: center;
-  background-color: #fdd000;
-  border-color: #fff;
-  font-weight: 500;
-  font-size: 1.1rem;
-  width: 200px;
-  height: 3rem;
-  color: black;
-  padding: 0px 0px 0px 0px;
-  margin:0px 0px 30px 0px;
-  border-radius: 5px; 
-  /* box-shadow: 0 -15px 20px -10px rgba(0, 0, 0, 0.15) inset; */
+.number-counter .number-counter-container .number-counter-content{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
 
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2)
+       
 }
+
+.number-counter .number-counter-container .number-counter-content .number-counter-content-text{
+  font-size: 120px;
+}
+
+/* Number Counters  */

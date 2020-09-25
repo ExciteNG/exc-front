@@ -8,13 +8,13 @@ import Logo from '../../../assets/img/ExciteLogo.png'
 import * as actions from '../../../store/actions/auth'
 import { Input } from 'antd';
 
-import {UserOutlined,  ShoppingCartOutlined,AudioOutlined ,LoginOutlined,LogoutOutlined} from '@ant-design/icons'
+import {UserOutlined,  ShoppingCartOutlined,AudioOutlined ,LogoutOutlined} from '@ant-design/icons'
 
 import axios from 'axios'
 
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 const Search = Input.Search;
 
@@ -170,14 +170,14 @@ class ExciteNav extends React.Component{
                                     </div>
                                 
                                     <div className="">
-                                <Link to="/select-account">
+                                <Link to="/vendor-signup">
                                 Register
                                   </Link>
                                     </div>
                                 
                                 </div>
                                 </>
-                            )
+                            ) 
                         }
                         </>
 

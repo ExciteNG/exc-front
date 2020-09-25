@@ -20,7 +20,7 @@ const dateFormat = 'YYYY/MM/DD';
 
 
 
-const host = "https://backend-entr.herokuapp.com"
+const host = "http://127.0.0.1:8000"
 
 
 const openNotification = (msg) => {
@@ -302,7 +302,7 @@ class NewCampaign extends Component {
           message.error('Number of influencers must be a Number')
         }
         
-        alert('works')
+       
     }
 
     gettr(values){

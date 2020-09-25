@@ -9,7 +9,7 @@ import TempoaryDrawer from '../../Sidebar/SideNav'
 
 import {notification,message} from 'antd'
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 class createNewInvoice extends Component{
     state = {
         invoiceRecord :[],

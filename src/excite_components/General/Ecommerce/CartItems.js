@@ -25,7 +25,7 @@ const formItemLayout = {
 
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 const Request_Order_url = host + '/management/new_order/'
 
   
@@ -152,7 +152,7 @@ class CartList extends Component{
       };
       console.log()
      
-        await axios.get(`https://backend-entr.herokuapp.com/retail/remove-item/${id}/`)
+        await axios.get(`http://127.0.0.1:8000/retail/remove-item/${id}/`)
         .then(res =>{
           if (res.status == 200){
             openNotification(res.data['Message'])

@@ -29,7 +29,7 @@ const openNotification = (msg) => {
   });
 }
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 class Contact_Field extends Component{
     state = {
@@ -75,7 +75,7 @@ class Contact_Field extends Component{
         "Content-Type": "application/json",
         Authorization: `Token ${this.props.token}`
       };
-        await axios.get(`https://backend-entr.herokuapp.com/management/delete_contact/${id}/`)
+        await axios.get(`http://127.0.0.1:8000/management/delete_contact/${id}/`)
         .then(res =>{
           this.openNotification(res.data['Message'])
         })
@@ -145,7 +145,7 @@ class Contact_Field extends Component{
                Authorization: `Token ${this.props.token}`
              };
              
-             axios.get(`https://backend-entr.herokuapp.com/management/broadcast/`,
+             axios.get(`http://127.0.0.1:8000/management/broadcast/`,
               {
                params: {
                   Heading,  Phone ,Message, Email
@@ -192,7 +192,7 @@ class Contact_Field extends Component{
                 Authorization: `Token ${this.props.token}`
               };
               
-              axios.get(`https://backend-entr.herokuapp.com/management/save_contact/`,
+              axios.get(`http://127.0.0.1:8000/management/save_contact/`,
                {
                 params: {
                    Name, Email ,  Phone ,Address

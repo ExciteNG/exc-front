@@ -1,0 +1,174 @@
+.business-boxesGird{
+    display: flex;   
+}
+
+.business-boxesGird .left{
+    display: block;
+    /* max-width: 400px;
+    width: 400px; */
+    margin: 10px;
+
+}
+
+.business-boxesGird .left{
+    display: right;
+    /* max-width: 700px;
+    width: 600px; */
+    margin: 10px;
+
+}
+
+/* Boxes */
+.business-boxes-container {
+    display: grid;
+    grid-gap: 20px;
+   grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .business-boxes-container .business-boxes-list {
+    background: var(--light);
+    text-align: left;
+    padding: 1.5rem 2rem;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);;
+    display: block;
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content{
+    display: block,
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-content-heading-box{
+      height: 50px;
+  }
+
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-heading{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:25px;
+    font-weight:500px;
+    color:rgb(6, 155, 38);
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-text{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:14px;
+    
+  }
+
+.spannedText{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size:14px;
+  color:rgb(6, 155, 38);
+}
+
+@media (max-width: 500px){
+
+  .business-boxesGird{
+    display: flex;   
+    flex-direction: column;
+}
+
+.business-boxesGird .left{
+    display: block;
+    margin: 10px;
+
+}
+
+.business-boxesGird .left{
+    display: right;
+    margin: 10px;
+
+}
+
+  .business-boxes-container {
+    display: grid;
+    grid-gap: 20px;
+   grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .business-boxes-container .business-boxes-list {
+    background: var(--light);
+    text-align: left;
+    padding: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);;
+    display: block;
+    width: 350px
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content{
+    display: block,
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-content-heading-box{
+      height: 40px;
+  }
+
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-heading{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:20px;
+    font-weight:500px;
+    color:rgb(6, 155, 38);
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-text{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:14px;
+    
+  }
+}
+
+
+@media (max-width: 700px){
+
+  .business-boxesGird{
+    display: flex;   
+    flex-direction: column;
+}
+
+.business-boxesGird .left{
+    display: block;
+    margin: 10px;
+
+}
+
+.business-boxesGird .left{
+    display: right;
+    margin: 10px;
+
+}
+
+  .business-boxes-container {
+    display: grid;
+    grid-gap: 20px;
+   grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .business-boxes-container .business-boxes-list {
+    background: var(--light);
+    text-align: left;
+    padding: 10px;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);;
+    display: block;
+    width: 350px
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content{
+    display: block,
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-content-heading-box{
+      height: 40px;
+  }
+
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-heading{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:20px;
+    font-weight:500px;
+    color:rgb(6, 155, 38);
+  }
+  
+  .business-boxes-container .business-boxes-list .business-boxes-content .business-boxes-text{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size:14px;
+    
+  }
+}

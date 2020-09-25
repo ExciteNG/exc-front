@@ -51,7 +51,7 @@ export default function AffiliateUsersTable(props) {
                 {row.username} 
               </TableCell>
               <TableCell align="left">{row.email}</TableCell>
-              <TableCell align="left">{row.refferal_code}</TableCell>
+              <TableCell align="left">{row.registered_date}</TableCell>
              
               
             </TableRow>

@@ -15,16 +15,12 @@ export default function featureHomeContent(props) {
       <NavBarTwo />
       <HalfHeader />
 
-      <div className="">
-        <div className="new-container">
-          <SearchBox />
+      <div className="new-container">
+        <SearchBox />
+        <div className="products-fluid-container">
+          <Products />
         </div>
-        <div className="fitter">
-          <div className="products-fluid-container">
-            <Products />
-          </div>
-        </div>
-        <div className="new-container">
+        <div className="">
           <SlideTwo />
         </div>
         <HomeCard />

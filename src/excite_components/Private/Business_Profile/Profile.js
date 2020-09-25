@@ -12,7 +12,7 @@ import Profile_Edit from './Edit_Profile'
 
 const { TabPane } = Tabs;
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 const Profile_id_url  = host + '/stream/get_profile_id/'
 const Profile_url = host + '/stream/profile_view/'
@@ -194,6 +194,11 @@ class User_Profile extends React.Component{
 
                                   <div className="horizontal-right">
                                       <div>
+
+                                      <p className="horizontal-right-profile-text">
+                                            {profile.BusinessName} 
+                                          </p>
+
                                         <p className="horizontal-right-profile-text">
                                             {profile.User_First_Name} {profile.User_LastName}
                                           </p>

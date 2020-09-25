@@ -36,41 +36,41 @@ body {
     background-color: rgb(255, 255, 255);
     color: #000000;
   }
+
+
   
-  .edit-profile-button{
-    background-color: rgb(34, 177, 34); /* Green */
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px 10px 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 15px;
-  }
+.edit-profile-button{
+  background-color: rgb(34, 177, 34); /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px;
+}
 
-  .sidenav-image-container{
-    margin: 0px 0px 0px 60px;
-  }
+.sidenav-image-container{
+  margin: 0px 0px 0px 60px;
+}
 
-  /* .sidenav-text-container{
+.sidenav-text-container{
 
 
-  } */
+}
 
-  .sidenav-image{
-    height: 120px;
-    border-radius: 100%;
-    width: 50%;
-  }
+.sidenav-image{
+  height: 120px;
+  border-radius: 100%;
+  width: 50%;
+}
   
   .main {
-    margin-left: 250px; /* Same as the width of the sidenav */
+    margin-left: 230px; /* Same as the width of the sidenav */
     font-size: 28px; /* Increased text to enable scrolling */
-    padding: 20px;
-    width: 100%;
-
+    padding: 0px
   }
   
   @media screen and (max-height: 450px) {
@@ -306,20 +306,6 @@ a {
 
 /* K-boxes ends here */
 
-.create-client-button{
-  background-color: #4759ff;
-  display: block;
-  border-color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-  width: 50%;
-  height: 48px;
-  color: #fff;
-  padding: 10px;
-  border-radius: 3px;
-  /* float:left; */
-  margin: 20px;
-}
 
 .box-icon{
   /* display: block; */
@@ -341,17 +327,23 @@ a {
   /* float:left; */
 }
 
-@media (max-width: 769px){
-  
-  .sidenav {
-    display: none;
-  }
-  
+
+@media (max-width: 500px) {
   .main {
-    /* width: 100px; */
-    margin-left: 0px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
+    margin-left: 00px; /* Same as the width of the sidenav */
+; /* Increased text to enable scrolling */
     padding: 0px
   }
+
+  
+}
+
+@media (max-width: 700px) {
+  .main {
+    margin-left: 00px; /* Same as the width of the sidenav */
+; /* Increased text to enable scrolling */
+    padding: 0px
+  }
+
   
 }

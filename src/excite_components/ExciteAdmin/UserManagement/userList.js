@@ -24,7 +24,7 @@ const openNotification = (msg) => {
   }
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 const users_count_endponit =  host + '/excite-admin-connect/count_users/'
 const profile_list_endpoint = host + '/excite-admin-connect/list_profiles/'
 

@@ -8,7 +8,7 @@ import { connect } from "react-redux";
 
 //import TemporaryDrawer from '../Sidebar/SideNav'
 
-const UserPost_url = 'https://backend-entr.herokuapp.com/stream/view_post/'
+const UserPost_url = 'http://127.0.0.1:8000/stream/view_post/'
 
 
 const TextArea = Input.TextArea
@@ -48,7 +48,7 @@ const Condition = ['New', 'Foriegn Used']
 const QualificationType = ['SSCE','HND' ,'BSC','MSC','PHD']
 const yearExp = ['1 Years','2 Years','3 Years' , '4 Years']
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 class jobCreation extends Component{
     state = {

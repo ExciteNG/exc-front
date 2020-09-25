@@ -28,7 +28,7 @@ const openNotification = (msg) => {
     },
   });
 };
-const host = "https://backend-entr.herokuapp.com";
+const host = "http://127.0.0.1:8000";
 
 const Profile_id_url = host + `/stream/get_profile_id/`;
 const Profile_url = host + `/stream/profile_view/`;
@@ -238,7 +238,7 @@ class ProfileDashboard extends Component {
     };
 
     axios
-      .get(`https://backend-entr.herokuapp.com/stream/profile_view/${profile_id}/`)
+      .get(`http://127.0.0.1:8000/stream/profile_view/${profile_id}/`)
       .then((res) => {
         this.setState({
           profile: res.data,
@@ -247,11 +247,8 @@ class ProfileDashboard extends Component {
         const CheckEdit = res.data["Edited"];
         const checkVerification = res.data["Verified"];
         if (CheckEdit == false) {
-          message.error(
-            "Please Edit Your profle, For Us to Process Your Data",
-            10
-          );
-          //this.props.history.push("/edit_profile/")
+          // message.error('Please Edit Your profle, For Us to Process Your Data', 10)
+          window.location.replace("/profile/");
           // this.props.history.push("/edit_profile/")
         }
         if (checkVerification == false) {
@@ -461,16 +458,23 @@ class ProfileDashboard extends Component {
             <TemporaryDrawer />
 
             <div className="main">
-              <div className="display-cards-fitter">
+              <div className="fitter">
                 <ul className="display-cards-container">
                   <li className="display-cards-list">
                     <div className="display-cards-box display-green">
                       <h3 className="display-card-title-override">
                         Account Tpye
                       </h3>
-                      <p className="display-card-text">
-                        {membership.membership}
-                      </p>
+
+                      <a
+                        style={{ fontSize: 20, color: "white" }}
+                        className="display-card-text"
+                        href="/membership_select"
+                      >
+                        <p className="display-card-text">
+                          {membership.membership}
+                        </p>
+                      </a>
                     </div>
                   </li>
 
@@ -491,90 +495,111 @@ class ProfileDashboard extends Component {
               </div>
 
               <div className="fitter">
-                <div className="dashboard-grid">
-                  <ul className="Rapidboxes">
-                    <li className="Rapidboxes-container">
-                      <div className="Rapidboxes-image-container">
-                        <img
-                          className="Rapidboxes-image"
-                          src="https://vconnectdesign.bitbucket.io/img/about/product-pool-banner.svg"
-                        />
-                      </div>
-                      <div className="Rapidboxes-content">
-                        <h3 className="Rapidboxes-heading">Upload a Product</h3>
+                <div className="page-grid">
+                  <div className="left">
+                    <>
+                      <ul className="action-cards-container">
+                        <li className="action-cards-list">
+                          <div className="action-cards-boxes">
+                            <div className="action-cards-text-section">
+                              <Link to="/create/portal/">
+                                <p className="action-cards-text">
+                                Upload Your Product
+                                </p>
+                              </Link>
+                            </div>
 
-                        <p className="Rapidboxes-text">
-                          Upload a new products on excite
-                        </p>
-
-                        <Link to="/create/portal/">
-                          <button className="Rapidboxes-button">Open</button>
-                        </Link>
-                      </div>
-                    </li>
-
-                    <li className="Rapidboxes-container">
-                      <div className="Rapidboxes-image-container">
-                        <img
-                          className="Rapidboxes-image"
-                          src="https://vconnectdesign.bitbucket.io/img/about/product-pool-banner.svg"
-                        />
-                      </div>
-                      <div className="Rapidboxes-content">
-                        <h3 className="Rapidboxes-heading">
-                          Influence Your Campaign
-                        </h3>
-
-                        <p className="Rapidboxes-text">
-                          Create a marketing Campaign with Excite
-                        </p>
-
-                        <Link to="/campaign-list">
-                          <button className="Rapidboxes-button">Open</button>
-                        </Link>
-                      </div>
-                    </li>
-                    <li className="Rapidboxes-container">
-                      {showAnalysis ? (
-                        <>
-                          <div className="base-card">
-                            <Bar
-                              className=""
-                              data={this.state.chartData}
-                              options={{
-                                responsive: true,
-                                maintainAspectRatio: true,
-                                title: {
-                                  display: this.props.displayTitle,
-                                  text:
-                                    "Largest Cities In " + this.props.location,
-                                  fontSize: 25,
-                                },
-                                legend: {
-                                  display: this.props.displayLegend,
-                                  position: this.props.legendPosition,
-                                },
-                              }}
-                            />
-                          </div>
-                        </>
-                      ) : (
-                        <>
-                          <div className="content-empty">
-                            <div className="content-empty-image-container">
-                              <p className="content-empty-text">
-                                Uploads Product/Services to get insights
-                              </p>
-                              <img
-                                className="content-empty-image"
-                                src="https://enterprise40.s3.eu-west-2.amazonaws.com/ExciteInfographs/Empty.png"
-                              />
+                            <div className="action-cards-image-section">
+                              <Link to="/create/portal/">
+                                <img
+                                  src={
+                                 "https://vconnectdesign.bitbucket.io/img/about/product-pool-banner.svg"
+                                  }
+                                  className="action-cards-image"
+                                />
+                              </Link>
                             </div>
                           </div>
-                        </>
-                      )}
-                    </li>
-                  </ul>
+                        </li>
+
+
+                        <li className="action-cards-list">
+                          <div className="action-cards-boxes">
+                            <div className="action-cards-text-section">
+                              <Link to="/request-loan">
+                                <p className="action-cards-text">
+                               Get A Loan Today
+                                </p>
+                              </Link>
+                            </div>
+
+                            <div className="action-cards-image-section">
+                              <Link to="/request-loan">
+                                <img
+                                  src={
+                                 "https://vconnectdesign.bitbucket.io/img/about/product-pool-banner.svg"
+                                  }
+                                  className="action-cards-image"
+                                />
+                              </Link>
+                            </div>
+                          </div>
+                        </li>
+
+                     </ul>
+                    </>
+
+                    
+                  </div>
+
+                  <div className="right">
+
+                  <ul className="Rapidboxes">
+                      <li className="Rapidboxes-container">
+                        <div className="Rapidboxes-image-container">
+                          <img
+                            className="Rapidboxes-image"
+                            src="https://vconnectdesign.bitbucket.io/img/about/product-pool-banner.svg"
+                          />
+                        </div>
+                        <div className="Rapidboxes-content">
+                          <h3 className="Rapidboxes-heading">
+                            Upload a Product
+                          </h3>
+
+                          <p className="Rapidboxes-text">
+                            Upload a new products on excite
+                          </p>
+
+                          <Link to="/create/portal/">
+                            <button className="Rapidboxes-button">Open</button>
+                          </Link>
+                        </div>
+                      </li>
+
+                      <li className="Rapidboxes-container">
+                        <div className="Rapidboxes-image-container">
+                          <img
+                            className="Rapidboxes-image"
+                            src="https://vconnectdesign.bitbucket.io/img/about/product-pool-banner.svg"
+                          />
+                        </div>
+                        <div className="Rapidboxes-content">
+                          <h3 className="Rapidboxes-heading">
+                            Influence Your Campaign
+                          </h3>
+
+                          <p className="Rapidboxes-text">
+                            Create a marketing Campaign with Excite
+                          </p>
+
+                          <Link to="/campaign-list">
+                            <button className="Rapidboxes-button">Open</button>
+                          </Link>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -583,7 +608,17 @@ class ProfileDashboard extends Component {
           <div className="wrapper">
             <TemporaryDrawer />
             <div className="main">
-              <p>Unauthorized User</p>
+              <div className="fitter">
+                <div className="content-empty">
+                  <div className="content-empty-image-container">
+                    <p className="content-empty-text">Unauthorized User</p>
+                    <img
+                      className="content-empty-image"
+                      src="https://enterprise40.s3.eu-west-2.amazonaws.com/ExciteInfographs/Empty.png"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         )}

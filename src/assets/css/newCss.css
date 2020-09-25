@@ -1,0 +1,132 @@
+
+.half-flex{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: stretch;
+  height: 350px;
+  margin-bottom: 10px;
+}
+
+.h-box-text{
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+
+.slider-fitter{
+  margin-top: 3rem;
+}
+
+.half-box{
+  /* border: 2px solid #ccc; */
+  width: 100%;
+  padding:20px
+}
+
+.half-box-1{
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #ffffff;
+  color: white;
+  text-align: center;
+}
+
+.half-box-1 h1, .half-box-2 h1{
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  /* padding-top: 10rem; */
+}
+
+.half-box-2{
+  -webkit-background-size: cover;
+  -moz-background-size:  cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: #ffffff;
+  color: white;
+  text-align: center;
+}
+
+.half-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin-top:40px;
+
+}
+
+.half-content-boxes{
+  /* padding: 20px; */
+  padding-top: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+/* 
+.half-box-content:hover{
+  text-decoration: underline;
+} */
+
+.half-content-text {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-top:10px;
+  padding-bottom: 10px;
+}
+
+.half-content-text:hover{
+  text-decoration: underline;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 500px) {
+  .half-flex {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tiles{
+  display: grid;
+  grid-gap: 20px;
+  padding: 0;
+  list-style: none; 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));}
+
+.tiles .tiles-list{
+  display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: left;
+    color: black;
+    font-size: 1.1rem;
+    box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79);
+    border-radius: 12px;
+}
+
+.tiles .tiles-list .tiles-upper-content {
+  font-size: 38px;
+  margin: 0px 0px 17px 0px;
+  padding: 20px;
+}
+
+.tiles .tiles-list .tiles-upper-content h3{
+  font-size: 38px;
+}
+
+.tiles .tiles-list .tiles-upper-content p{
+  font-size: 20px;
+}
+
+.tiles-upper-lower{
+  padding-left: 20px;
+}
+
+.tiles .tiles-list .tiles-lower-content {
+  font-size: 38px;
+  padding-left: 30px;
+  padding-bottom: 20px;  
+}

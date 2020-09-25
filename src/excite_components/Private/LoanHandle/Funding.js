@@ -8,7 +8,7 @@ import { connect } from "react-redux";
 
 //import TemporaryDrawer from '../Sidebar/SideNav'
 
-const UserPost_url = 'https://backend-entr.herokuapp.com/stream/view_post/'
+const UserPost_url = 'http://127.0.0.1:8000/stream/view_post/'
 
 
 const TextArea = Input.TextArea
@@ -51,7 +51,21 @@ const Banks = ['Access','Union Bank' ,'First Bank']
 
 const TenureLength = ['3 Months' ,'6 Months' ,'9 Months', '12 Months']
 
-const host = 'https://backend-entr.herokuapp.com'
+const Sector = [
+  "Food & Beverages",
+  "Clothing & Fashion Apparel",
+  "Beauty & Health care",
+  "Technology",
+  "Logistics & Transportation",
+  "Events Planning & Corporate Gifts",
+  "Consulting",
+];
+
+const BusinessYear = ["1- 2 Year", "2-4 Years", "5 Years and above"];
+const BusinessLocation = ["Island", "Mainland"];
+
+
+const host = 'http://127.0.0.1:8000'
 
 class requestFunding extends Component{
     state = {
@@ -70,6 +84,7 @@ class requestFunding extends Component{
         Image_Post:'',
     }
 
+
  
     Create_Query = async(values, err)=>{
         const BusinessName =  
@@ -82,11 +97,10 @@ class requestFunding extends Component{
           values["AmountRequested"] === undefined ? null : values["AmountRequested"] ; 
         const BusinessAddress = 
            values["BusinessAddress"] === undefined ? null : values["BusinessAddress"] ; 
-    //    const Description = values["Description"] === undefined ? null : values["Description"] ;
+        const BuinsessType = values["BuinsessType"] === undefined ? null : values["BuinsessType"] ;
       const  BusinessAccount =
           values["BusinessAccount"] === undefined ? null : values["BusinessAccount"] ;
-      
-        const MaritalStats = values['MaritalStats']
+ 
         const  BankName =
           values["BankName"] === undefined ? null : values["BankName"] ;
           
@@ -100,11 +114,6 @@ class requestFunding extends Component{
        const  LoanDuration =
           values["LoanDuration"] === undefined ? null : values["LoanDuration"] ;
 
-        
-          const Original_User_id = this.state.Owner
-          const Category = parseInt(this.Category_ID)
-          ///const Image_Post = this.state.Image_Post
-
 
           //Assigns New Form Data
           let form_data =  new FormData()
@@ -112,10 +121,8 @@ class requestFunding extends Component{
           form_data.append('AmountRequested', AmountRequested);
           //form_data.append('Description',Description);
           form_data.append('LoanDuration', LoanDuration);
-          form_data.append('BusinessAccount', BusinessAccount)
-          form_data.append('MaritalStats',MaritalStats)
-
-          form_data.append('EmploymentStatus',EmploymentStatus)
+          // form_data.append('BusinessAccount', BusinessAccount)
+          form_data.append('BuinsessType',BuinsessType)
 
           form_data.append('LGA',LGA)
           form_data.append('BusinessAddress',BusinessAddress)
@@ -178,13 +185,8 @@ class requestFunding extends Component{
                    </div>
                         <Form 
                         className="form-box-width"
-                        {...formItemLayout}
+                        
                          onFinish={this.Create_Query}>
-                            
-                
-                            
-
-
                             
                             <Form.Item 
                              rules={[{ required: true }]}
@@ -198,88 +200,47 @@ class requestFunding extends Component{
                             
                             </Form.Item>
 
-                            <Form.Item 
-                             rules={[{ required: true }]}
-                            name ='AmountRequested'> 
                             
-                                <Input
-                                
-                                placeholder="How much do you intend to loan" 
-                                enterButton
-                                />
-                            
-                            </Form.Item>
-
-                            <Form.Item
-                             rules={[{ required: true }]}
-                             name ="LoanDuration" >
-                                
-                                <Select placeholder="How long do you intend ot loan" >
-                                
-                                {
-                                  TenureLength.map((c)=>(
-                                    <Option 
-                                    value={c}>{c}</Option>
-                                  ))
-                              }
+                  <Form.Item
+                    rules={[{ required: true }]}
+                    name="AmountRequested"
+                  >
+                    <Input
+                      placeholder="How much capital do you need"
+                      enterButton
+                    />
+                  </Form.Item>
                               
-                                
-                                </Select>
-                              
-                            </Form.Item>
+                  <Form.Item rules={[{ required: true }]} name="BuinsessType">
+                    <Select placeholder="What Kind of business do you run">
+                      {Sector.map((c) => (
+                        <Option value={c}>{c}</Option>
+                      ))}
+                    </Select>
+                  </Form.Item>
 
+                  <Form.Item rules={[{ required: true , message:'Please Fill this field' }]} name="PeriodRunnning">
+                    <Select placeholder="How Long has your business been running ">
+                      {BusinessYear.map((c) => (
+                        <Option value={c}>{c}</Option>
+                      ))}
+                    </Select>
+                  </Form.Item>
 
-
-                          <Form.Item
-                             rules={[{ required: true }]}
-                             name ="BankName" >
-                                
-                                <Select placeholder="Your Bank Name ">
-                                {
-                                  Banks.map((c)=>(
-                                    <Option 
-                                    value={c}>{c}</Option>
-                                  ))
-                              }
-                              
-                                    </Select>
-                              
-                            </Form.Item>
-
-                            <Form.Item 
-                             rules={[{ required: true }]}
-                            name ='BusinessAccount'> 
-                            
-                                <Input
-                                
-                                placeholder="Business Bank Account" 
-                                enterButton
-                                />
-                            
-                            </Form.Item>
+                  <Form.Item rules={[{ required: true }]} name="BusinessLocation">
+                    <Select placeholder="Where is Your Buusiness Located ">
+                      {BusinessLocation.map((c) => (
+                        <Option value={c}>{c}</Option>
+                      ))}
+                    </Select>
+                  </Form.Item>
 
 
                             <Form.Item
-                             rules={[{ required: true }]}
-                             name ="Employment Status" >
-                                
-                                <Select placeholder="Employment Status">
-                                <Option value="Employed"> Employed </Option>
-                                    <Option value="UnEmployed"> Unemployed </Option>
-                                    </Select>
-                              
-                            </Form.Item>
-
-                            <Form.Item
-                             rules={[{ required: true }]}
-                             name ="Marital Status" >
-                                
-                                <Select placeholder="Marital Status">
-                                <Option value = "Married">  Married   </Option>
-                                <Option value = "Single">  Single   </Option>
-                                <Option value = "Divorced">  Divorced   </Option>
-                                    </Select>
-                              
+                              rules={[{ required: true }]}
+                              name="BusinessEmail"
+                            >
+                              <Input placeholder="Your Business Email" enterButton />
                             </Form.Item>
 
 
@@ -342,6 +303,8 @@ class requestFunding extends Component{
                           </button>
                         </Form.Item>
 
+                      
+
                        </Form>
                     
 
@@ -351,6 +314,11 @@ class requestFunding extends Component{
                        
                     </div>
                     </div>
+
+                      
+         
+        
+
                       </div>
                       
                     </>

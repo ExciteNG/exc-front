@@ -9,7 +9,7 @@ import TemporaryDrawer from '../Sidebar/SideNav'
 
 //import RavePayment from '../../containers/Payment Gateway/RavePay'
 import Paystacker from '../Payment Gateway/Paystack'
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 const UserMembership_url  = host + '/stream/user_membership' 
 
 const openNotification = (msg) => {
@@ -79,7 +79,7 @@ class Membership_Select extends Component{
         "Content-Type": "application/json",
         Authorization: `Token ${token}`
       };
-       await axios.get('https://backend-entr.herokuapp.com/stream/membership_payment_list/')
+       await axios.get('http://127.0.0.1:8000/stream/membership_payment_list/')
        .then(res =>{
          this.setState({
           Subscriptions : res.data,

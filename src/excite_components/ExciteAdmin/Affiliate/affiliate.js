@@ -15,7 +15,7 @@ class Affiliate extends Component {
             "Content-Type": "application/json",
             Authorization: `Token ${token}`
         };
-        axios.get('https://backend-entr.herokuapp.com/excite-admin-connect/get-affiliate-marketers/')
+        axios.get('http://127.0.0.1:8000/excite-admin-connect/get-affiliate-marketers/')
         .then(res => {
             this.setState({
                 data: res.data

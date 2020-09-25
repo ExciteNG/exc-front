@@ -1,10 +1,8 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 
-import axios from "axios";
-import { connect } from "react-redux"; 
 import {InputNumber  ,notification  } from 'antd';
-import { Link, withRouter } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
@@ -13,11 +11,6 @@ import TableContainer from '@material-ui/core/TableContainer';
 import TableHead from '@material-ui/core/TableHead';
 import TableRow from '@material-ui/core/TableRow';
 import Paper from '@material-ui/core/Paper';
-
-
-
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash, faHamburger } from "@fortawesome/free-solid-svg-icons";
 
 
 const useStyles = makeStyles({
@@ -36,7 +29,7 @@ const  openNotification = (msg) => {
     });
     }
 
-var host = 'https://backend-entr.herokuapp.com'
+var host = 'http://127.0.0.1:8000'
 
 
  

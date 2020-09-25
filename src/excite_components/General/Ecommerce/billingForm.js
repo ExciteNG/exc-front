@@ -6,7 +6,7 @@ import axios from "axios";
 import { Form, Input, InputNumber, Button, Select,Modal, notification , Slider, message} from 'antd';
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 const Request_Order_url = host + '/management/new_order/'
 
 

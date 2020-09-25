@@ -17,7 +17,7 @@ import Order_Form from '../../../containers/Order_Form'
 import Make_Order_Form from '../../../containers/Make_Order'
 import { LensTwoTone } from '@material-ui/icons';
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 const item_type = 'electronics'
 const { TabPane } = Tabs; 
  
@@ -358,12 +358,12 @@ class Electronics_Item_Detail extends Component{
 
           
                 <div className="container2">
-                <div className=" page-grid ">
+                <div className="page-grid">
                
                {
                  loaded_comments ?(
 
-                   <div className="left">
+                   <div className="right">
                       <span>
                         <h3 className="" style={{fontSize:17}}>
                           Reviews
@@ -400,7 +400,7 @@ class Electronics_Item_Detail extends Component{
                       }
                       </div>
                   </div>
-
+ 
                       ):(
                         <div className="left">
                             <h3 style={{fontSize:20}}>

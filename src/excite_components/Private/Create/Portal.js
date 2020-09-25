@@ -4,7 +4,7 @@ import {Rate} from 'antd'
 import axios from 'axios'
 import TemporaryDrawer from '../Sidebar/SideNav'
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 class Create_Post_Portal extends Component{
     state ={
@@ -53,14 +53,13 @@ class Create_Post_Portal extends Component{
                     </div>
                 </div>
 
-            <div className="container">
-                <div className="grid grid-cols-8">
+            <div className="fitter">
+                <ul className="post-create-container">
                     {
                         categories.map((c)=>(
-                            <div
+                            <li
                             onClick={()=>{this.redirect_page(c.CategoryKey, c.id)}}
-                             className=" col-span-4 sm:col-span-4
-                             md:col-span-4 xl:col-span-2 lg:col-span-2">
+                             className="post-create-list">
                                 
                                     <div className="create-post-box">
                                      <div className="create-post-box-content">
@@ -75,10 +74,10 @@ class Create_Post_Portal extends Component{
                                 </div>
                                 </div>
 
-                             </div>
+                             </li>
                         ))
                     }
-                </div>
+                </ul>
             </div>
 
                 </div>

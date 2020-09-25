@@ -16,7 +16,7 @@ const { Dragger } = Upload
 
 //import TemporaryDrawer from '../Sidebar/SideNav'
 
-const UserPost_url = 'https://backend-entr.herokuapp.com/stream/view_post/'
+const UserPost_url = 'http://127.0.0.1:8000/stream/view_post/'
 
 
 const TextArea = Input.TextArea
@@ -56,9 +56,9 @@ const Condition = ['New', 'Foriegn Used']
 const QualificationType = ['SSCE','HND' ,'BSC','MSC','PHD']
 const yearExp = ['1 Years','2 Years','3 Years' , '4 Years']
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
-
+ 
 
 class vendorLoanList extends Component{
     state = {
@@ -137,14 +137,34 @@ class vendorLoanList extends Component{
                       
 
                     <div className="fitter">
-                         
-                         <div className="intro-header-content">
-                            <h1>SME-Funding</h1>
-                            <p>Get loans quickly</p>
-                            <a href="/request-loan">
-                              <button className="custom-button">Get Started</button>
-                            </a>
-                         </div>
+                          <div className="page-grid">
+                            <div className="right">
+
+                              <div className="">
+                              <h3>
+                                   Excite SME Clinic
+                                </h3>
+
+                                <p className="pText">
+                                We provide aspiring, emerging and experienced entrepreneurs with hands on
+                                 non-conventional training, 
+                                knowledge and information on how to start, grow and sustain their businesses.
+                                </p>
+                              </div>
+                                
+                                <div className="">
+                          <Link to="/request-loan">
+                          <button 
+                          className="custom-button">
+                                 Get Started 
+                        </button> 
+                          </Link> 
+                                </div>
+
+                          </div>
+
+                        
+                      </div>
 
                     </div>
                      

@@ -10,6 +10,8 @@
   font-size: 16px;
 }
  
+
+
 .create-client-button{
   background-color: rgb(71, 89, 255);
     border-color: #fff;
@@ -35,6 +37,9 @@
     height:120px;
 }
 
+.top-card p{
+
+}
 
 .top-card-title{
     font-weight: bold;
@@ -117,6 +122,10 @@
   font-size:17px;
   color: white;
 }
+
+
+
+
 
 /*Theebz Profile Card */
 .profile-card-container{
@@ -282,15 +291,15 @@
   -ms-flex-pack: justify;
   justify-content: space-between;
   border-left: 1px solid rgba(0,0,0,0.04);
+  border: 14px ;
   /* padding: px ; */
   margin: auto;
 }
 
 .horizontal-right-profile-text{
-  margin: 10px  0px 0px 0px;
+  margin: 5px  0px 0px 0px;
   padding: 5px;
   font-size:18px;
-
 }
 
 .horizontal-box  .horizontal-right{
@@ -302,9 +311,9 @@
 
 /* Rapid Boxex */
 .Rapidboxes{
-  /* display: grid;
+  display: grid;
   grid-gap: 20px;
-  grid-template-columns:  repeat(2, 1fr); */
+  grid-template-columns:  repeat(2, 1fr);
   height: 400px;
   padding: 10px 0px 10px 0px;
   border: 0px solid blue;
@@ -385,7 +394,7 @@
   height: inherit;
   border-radius: 16px;
   height: inherit;
-  text-align: center;
+  text-align: left;
 }
 
 .campaignbox-section .campaignbox-container .campaignbox-image-container {
@@ -401,44 +410,262 @@
 }
 
 .campaignbox-section .campaignbox-container .campaignbox-content{
-  padding: 20px;
+  padding: 10px;
 }
+
+.campaignbox-section .campaignbox-container .campaignbox-content .custom-button{
+  padding: 20px;  
+  text-align: left;
+}
+
 
 .campaignbox-section .campaignbox-container .campaignbox-content  .campaignbox-heading{
   font-size: 22px;
+  text-align: left;
 }
 
 .campaignbox-section .campaignbox-container .campaignbox-content .campaignbox-text{
   font-size: 13px;
-}
-
-
-.campaign-box-list {
-  background: var(--light);
+  padding: 20px;
   text-align: left;
-  padding: 1rem 1rem;
-  border: 1px solid gray;
-  /* box-shadow: var(--shadow); */
-  /* margin: 20px; */
 }
 
-.campaign-box-list  h3{
-  font-family: 'Noto Sans JP', sans-serif;
-  /* padding: 1rem 1rem; */
-  font-size: 1rem;
+
+
+@media (max-width: 500px) {
+ 
+  .Rapidboxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(1, 1fr);
+    height: 400px;
+    padding: 10px 0px 10px 0px;
+    border: 0px solid blue;
+  }
+  
+  .Rapidboxes .Rapidboxes-container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: inherit;
+    border-radius: 16px;
+    height: inherit;
+    width: 240px;
+  }
+  
+  .campaignbox-section {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(1, 1fr);
+  }
+  
+  .campaignbox-section .campaignbox-container{
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: inherit;
+    border-radius: 16px;
+    height: inherit;
+    text-align: left;
+  }
+
+  
+.campaignbox-section .campaignbox-container .campaignbox-image-container .campaignbox-image{
+  height: 150px;
+  width: 300px
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content{
+  padding: 10px;
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content .custom-button{
+  padding: 0px;  
+  text-align: left;
+}
+
+
+.campaignbox-section .campaignbox-container .campaignbox-content  .campaignbox-heading{
+  font-size: 22px;
+  text-align: left;
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content .campaignbox-text{
+  font-size: 13px;
+  padding: 0px;
+  text-align: left;
+}
 
 }
 
-.campaign-box-list  p{
-  font-family: 'Noto Sans JP', sans-serif;
-  /* padding: 1rem 1rem; */
-  font-size: 1rem;}
 
-/* Vendor Dashboard*/
 
-.dashboard-grid{
-  display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  padding: 20px 0px 20px 0px;
+@media (max-width: 500px) {
+
+  .horizontal-box{
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79);
+    margin-bottom: 24px;
+    display: flex;
+    height: 250px;
+    width:auto;
+  }
+
+  .Rapidboxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(1, 1fr);
+    height: 400px;
+    padding: 10px 0px 10px 0px;
+    border: 0px solid blue;
+  }
+  
+  .Rapidboxes .Rapidboxes-container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: inherit;
+    border-radius: 16px;
+    height: inherit;
+    width: 240px;
+  }
+
+  .campaignbox-section {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(1, 1fr);
+  }
+  
+  .campaignbox-section .campaignbox-container{
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: inherit;
+    border-radius: 16px;
+    height: inherit;
+    text-align: left;
+  }
+  
+  
+.campaignbox-section .campaignbox-container .campaignbox-image-container .campaignbox-image{
+  height: 150px;
+  width: 300px
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content{
+  padding: 10px;
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content .custom-button{
+  padding: 20px;  
+  text-align: left;
+}
+
+
+.campaignbox-section .campaignbox-container .campaignbox-content  .campaignbox-heading{
+  font-size: 22px;
+  text-align: left;
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content .campaignbox-text{
+  font-size: 13px;
+  padding: 20px;
+  text-align: left;
+}
+
+}
+
+@media (max-width: 700px) {
+
+  .horizontal-box{
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 2px 5px 11px 0 rgba(232,232,232,0.79);
+    margin-bottom: 24px;
+    display: flex;
+    height: 250px;
+    width:600px;
+  }
+
+  .Rapidboxes{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(1, 1fr);
+    height: 400px;
+    padding: 10px 0px 10px 0px;
+    border: 0px solid blue;
+  }
+  
+  .Rapidboxes .Rapidboxes-container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: inherit;
+    border-radius: 16px;
+    height: inherit;
+    width: 240px;
+  }
+
+  .campaignbox-section {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns:  repeat(1, 1fr);
+  }
+  
+  .campaignbox-section .campaignbox-container{
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    height: inherit;
+    border-radius: 16px;
+    height: inherit;
+    text-align: left;
+  }
+  
+  
+.campaignbox-section .campaignbox-container .campaignbox-image-container .campaignbox-image{
+  height: 150px;
+  width: 300px
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content{
+  padding: 10px;
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content .custom-button{
+  padding: 20px;  
+  text-align: left;
+}
+
+
+.campaignbox-section .campaignbox-container .campaignbox-content  .campaignbox-heading{
+  font-size: 22px;
+  text-align: left;
+}
+
+.campaignbox-section .campaignbox-container .campaignbox-content .campaignbox-text{
+  font-size: 13px;
+  padding: 20px;
+  text-align: left;
+}
+
 }

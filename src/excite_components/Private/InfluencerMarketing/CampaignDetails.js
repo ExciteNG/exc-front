@@ -12,7 +12,7 @@ import PayGen from './PayPortal/Paystacker'
 
 import CampaignTableDrag from './Table/CampaignTable'
 
-const host = 'https://backend-entr.herokuapp.com';
+const host = 'http://127.0.0.1:8000';
 
  
 class vendorCampaignDetail extends Component{

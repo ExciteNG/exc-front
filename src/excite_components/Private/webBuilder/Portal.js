@@ -8,14 +8,16 @@ import { Descriptions, Badge , notification , Modal} from 'antd';
 import TemporaryDrawer from '../Sidebar/SideNav'
 
 import PortalWebTable from './store/tables'
-import EmailBuilder from './store/email'
+import EmailBuilder from './store/webCreator'
 import  PageDemo from './store/Preview'
 
-const host = 'https://backend-entr.herokuapp.com';
+const host = 'http://127.0.0.1:8000';
 
 class webCreatePortal extends Component{
     state = {
         AllowUser:false,
+        notEmpty : false , 
+
         websiteList : [] ,
     }
 
@@ -57,6 +59,11 @@ class webCreatePortal extends Component{
             this.setState({
               websiteList:res.data
             })
+            if (res.data.length > 0){
+              this.setState({
+                notEmpty : true
+              })
+            }
             console.log('this is the data',res.data)
           }else{
 
@@ -85,7 +92,7 @@ class webCreatePortal extends Component{
 
 
      render(){
-         const {AllowUser ,websiteList} = this.state
+         const {AllowUser ,websiteList , Empty ,notEmpty} = this.state
          const Passer = true
          return(
              <>
@@ -108,7 +115,7 @@ class webCreatePortal extends Component{
 
                               <p className="pText">
                               Join hundreds of thousands of small businesses
-                              in creating a website hosted by exciteds. 
+                              in creating a website hosted by Excite Enterprise 
                               </p>
 
                               <Link to={`/websitebuilder`}>
@@ -119,7 +126,7 @@ class webCreatePortal extends Component{
                             </button>
                               </Link>
                               
-                             
+                              
                           </div>
 
                        </div>
@@ -134,7 +141,28 @@ class webCreatePortal extends Component{
 
                                
                               <div className="fitter">
-                                <PortalWebTable data={websiteList} />
+                                {
+                                  notEmpty ? (
+                                      <>
+                                    <PortalWebTable data={websiteList} />
+                                      </>
+                                  ) : (
+                                    <>
+                              <div className="content-empty">
+                                    <div className="content-empty-image-container">
+                                        <p className="content-empty-text">
+                                          Create a new website
+                                        </p>
+                                        <img
+                                        className="content-empty-image"
+                                            src="https://enterprise40.s3.eu-west-2.amazonaws.com/ExciteInfographs/Empty.png"
+                                        />  
+                                        </div>
+                                </div>
+                                    </>
+                                  )
+                                }
+                                
                               </div>
 
                                 

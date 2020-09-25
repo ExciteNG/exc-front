@@ -48,7 +48,7 @@ const layout = {
 
 const FormItem = Form.Item
 
-const category_url = 'https://backend-entr.herokuapp.com/core_api/category_list/'
+const category_url = 'http://127.0.0.1:8000/core_api/category_list/'
 class Create_Post extends React.Component{
       state = {
         results : [] ,
@@ -153,6 +153,7 @@ class Create_Post extends React.Component{
                 </h3>
               <div className = "flex flex-wrap">
               <div className = "w-full md:w-7/12 ml-auto mr-auto px-4">
+              
               <Form  {...formItemLayout} onFinish={this.process_form}>
             <Form.Item>
              

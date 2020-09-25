@@ -17,7 +17,7 @@ import Paper from '@material-ui/core/Paper';
 
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash, faHamburger } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, } from "@fortawesome/free-solid-svg-icons";
 
 
 const useStyles = makeStyles({
@@ -36,7 +36,7 @@ const  openNotification = (msg) => {
     });
     }
 
-var host = 'https://backend-entr.herokuapp.com'
+var host = 'http://127.0.0.1:8000'
 
 export default function New_Book(props) {
   const classes = useStyles();

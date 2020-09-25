@@ -10,7 +10,7 @@ import ExciteNav from './sections/nav'
 import NewFooter from './sections/footer'
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 var Main  = []
 
 const vendor_post_url = host + `/vendors_post/`
@@ -31,7 +31,7 @@ class Vendor_View extends Component{
     
     //Previous Model to get Vendor data
     VendorPost = async()=>{
-        axios.get(`https://backend-entr.herokuapp.com/retail/vendor_products_public/${this.vendor_id}/`)
+        axios.get(`http://127.0.0.1:8000/retail/vendor_products_public/${this.vendor_id}/`)
         .then(res =>{
             if (res.status == 200){
                 this.setState({

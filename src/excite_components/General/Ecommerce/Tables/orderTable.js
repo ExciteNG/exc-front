@@ -7,7 +7,7 @@ import { notification} from 'antd';
 
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 const Request_Order_url = host + '/management/new_order/'
 
 const deleteItem = async (token,id) =>{
@@ -15,7 +15,7 @@ const deleteItem = async (token,id) =>{
       "Content-Type": "application/json",
       Authorization: `Token ${token}`
     };
-      await axios.get(`https://backend-entr.herokuapp.com/management/delete_contact/${id}/`)
+      await axios.get(`http://127.0.0.1:8000/management/delete_contact/${id}/`)
       .then(res =>{
         this.openNotification(res.data['Message'])
       })

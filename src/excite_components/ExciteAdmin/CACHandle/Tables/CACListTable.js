@@ -36,7 +36,7 @@ const  openNotification = (msg) => {
     });
     }
 
-var host = 'https://backend-entr.herokuapp.com'
+var host = 'http://127.0.0.1:8000'
 
 export default function CACTableSimple(props) {
   const classes = useStyles();

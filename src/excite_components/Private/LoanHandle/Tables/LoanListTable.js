@@ -34,7 +34,7 @@ const  openNotification = (msg) => {
     });
     }
 
-var host = 'https://backend-entr.herokuapp.com'
+var host = 'http://127.0.0.1:8000'
 
 export default function LoanTableSimple(props) {
   const classes = useStyles();
@@ -55,7 +55,7 @@ export default function LoanTableSimple(props) {
           <TableCell align="left">Business Name </TableCell>     
           <TableCell align="left">Amounted Requested</TableCell> 
               
-              <TableCell align="left">Duration </TableCell>
+             
             
               <TableCell align="left"> Location </TableCell> 
               <TableCell align="left"> Intrest </TableCell> 
@@ -72,7 +72,7 @@ export default function LoanTableSimple(props) {
                     <TableCell >{indexNumber++}</TableCell>
                     <TableCell align="left">{i.BusinessName}</TableCell>
                     <TableCell align="left">{i.AmoutRequested}</TableCell>
-                    <TableCell align="left">  {i.LoanDuration}  </TableCell>
+              
                   
                   
                     <TableCell align="left">

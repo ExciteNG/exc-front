@@ -19,6 +19,10 @@
 }
 
 
+.fitter-adjust{
+  height:600px
+}
+
 
 .demo-option-label-item > span {
   margin-right: 6px;
@@ -51,8 +55,13 @@
   font-weight: bold;
 }
 
+
 /* Ends Here */
- 
+
+/* Chart Js */
+
+/* Chart Js ends */
+
 .webCreateText{
   margin:30px 0px 0px 0px;
   padding: 20px;
@@ -110,9 +119,9 @@
 .single-grid{
   display: grid;
   grid-gap: 20px;
-  grid-template-columns:  repeat(2, 1fr);
+  grid-template-columns:  repeat(1, 1fr);
 
-  padding: 10px 0px 10px 0px;
+  padding: 20px;
 }
 
 .single-grid center{
@@ -151,6 +160,18 @@
   
 }
 
+ .page-grid-image-container{
+  
+  height: 409px;
+  padding: 20px;
+}
+
+ .page-grid-image-container .page-grid-image{
+  height: inherit;
+  width: 400px;
+}
+
+
 .page-grid .left .h3text {
    font-size: 30px;
   font-weight: 500;
@@ -159,6 +180,16 @@
   margin-bottom: 20px;
  
 }
+
+.h3text {
+  font-size: 30px;
+ font-weight: 500;
+ color:black;
+ text-align: left;
+ margin-bottom: 20px;
+
+}
+
 
 
 .page-grid .left .intro-header {
@@ -217,7 +248,17 @@
   color:black;
   text-align: left;
   /* margin-bottom: 20px; */
-  padding-left: 20px;
+
+ 
+}
+
+.pText{
+  font-size: 20px;
+  font-weight: 300;
+  color:black;
+  text-align: left;
+  /* margin-bottom: 20px; */
+  padding-left: 0px;
  
 }
 
@@ -367,11 +408,11 @@
 
 /* Return Empty */
 .content-empty  {
-  display: grid;
-  grid-gap: 20px;
-  padding: 0;
+  display: flex;
+  
+  padding: 0px 120px 0px 120px;
   list-style: none;
-  grid-template-columns: repeat(1, 1fr);
+ 
 }
 
 
@@ -386,14 +427,16 @@
 }
 
 .content-empty .content-empty-image-container .content-empty-text{
-  font-size: 25px;
-  font-weight: bold;
-  
-}
+  font-size:24px;
+  font-weight: 400;
+  text-align: center;
+  padding: inherit;
+  }
 
 .content-empty .content-empty-image-container .content-empty-image{
-  height: 200px;
-  width: 300px;
+  height: 350px;
+  width: 600px;
+  padding: inherit;
 }
 
 
@@ -407,7 +450,7 @@
 
 
 /* Media Queries */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .product {
     box-shadow: var(--shadow);
     width: 100%;
@@ -421,21 +464,20 @@
     grid-template-columns: 1fr;
   }
 
-}
-
-@media (max-width: 500px) {
-  .product-detail{
-    grid-template-columns: 1fr;
+  .container{
+    padding: 10px 0px 10px 0px;
   }
-
   
-  .page-grid{
-    grid-template-columns: 1fr;
+  .container2{
+    padding: 10px 0px 10px 0px;
   }
-
-  .product-detail{
-    grid-template-columns: 1fr;
+  
+  .fitter{
+    margin: 5px 10px 5px 10px;
+    padding: 10px 0px 10px 0px;
   }
+  
 
 
 }
+

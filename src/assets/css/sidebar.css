@@ -1,3 +1,13 @@
+.sidenav-logo{
+  height: 100px;
+}
+
+.sidenav-logo-image{
+  width: 150px;
+  height: inherit;
+  padding: 20px 20px 0px 20px;;
+}
+
 
 .menu-container{
   background-color: rgb(30, 31, 31);

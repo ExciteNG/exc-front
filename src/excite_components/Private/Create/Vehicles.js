@@ -10,7 +10,7 @@ import { connect } from "react-redux";
 
 import TemporaryDrawer from '../Sidebar/SideNav'
 
-const UserPost_url = 'https://backend-entr.herokuapp.com/stream/view_post/'
+const UserPost_url = 'http://127.0.0.1:8000/stream/view_post/'
 
 const dateFormat = 'YYYY/MM/DD';
 const TextArea = Input.TextArea
@@ -29,7 +29,7 @@ const formItemLayout = {
 };
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 const Vehicle_Type = ['Sedan','Truck','Coupe', 'Bus', 'Van', 'Mini-Van']
 const Vehicle_Model = ['Audi', 'Volvo','Ford', 'Mecerdes Benz','Toyota']
@@ -169,7 +169,7 @@ Create_Query = async(values, err)=>{
                     <div className="">
                         <Form 
                         className="form-box-width"
-                        {...formItemLayout}
+                        
                          onFinish={this.Create_Query}>
                             
                 

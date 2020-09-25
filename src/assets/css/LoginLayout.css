@@ -5,7 +5,7 @@
 
 .access-form-layout .access-form-image{
     width: 50%;
-    min-height: 100vh;
+ 
     overflow: hidden;
     position: relative;
    
@@ -58,7 +58,7 @@
     height: 50px;
     width: 100px;
 }
-  
+   
 .access-form-layout .access-form-image .access-header-intro{
     margin: 300px 90px 0px 90px;
 }
@@ -79,7 +79,7 @@
     width: 50%;
     padding: 0px 0px 0px 0px;
     background: #fff;
-    min-height: 100vh;
+ 
     overflow: auto;
 }
 
@@ -165,3 +165,36 @@
 
 }
 
+
+
+@media only screen and (max-width: 600px) {
+
+    .access-form-layout .access-form-image{
+        width: 0%;
+        display: none;
+        overflow: hidden;
+        position: relative;
+       
+    }
+    
+    .access-form-layout .access-form-box{
+        width: 100%;
+        padding: 0px 0px 0px 0px;
+        background: #fff;
+     
+        overflow: auto;
+    }
+    
+    .access-form-layout .access-form-box   .form-box .login-welcome-intro h3{
+        font-size:30px;
+        font-weight: 600;
+        color: rgb(6, 155, 38);
+      }
+    
+     .access-form-layout .access-form-box   .form-box .form-box-width{
+        width: 300px;
+      }
+    
+}
+    
+  

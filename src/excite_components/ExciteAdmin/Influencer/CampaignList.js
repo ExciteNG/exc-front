@@ -24,7 +24,7 @@ const  openNotification = (msg) => {
      });
      }
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 
 class adminCampaigns extends Component{
@@ -42,7 +42,7 @@ class adminCampaigns extends Component{
             "Content-Type": "application/json",
             Authorization: `Token ${token}`
         };
-    axios.get('https://backend-entr.herokuapp.com/excite-admin-connect/admin-c-list/')
+    axios.get('http://127.0.0.1:8000/excite-admin-connect/admin-c-list/')
     .then(res =>{
         const data = res.data
             this.setState({

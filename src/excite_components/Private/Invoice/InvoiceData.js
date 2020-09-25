@@ -10,7 +10,7 @@ import TempoaryDrawer from '../Sidebar/SideNav'
 import {notification,message, Descriptions } from 'antd'
 import InvoiceOrderCartTable  from './Tables/orderTable'
 
-var host = 'https://backend-entr.herokuapp.com'
+var host = 'http://127.0.0.1:8000'
 
 class InvoiceDetail extends Component{
     state = {

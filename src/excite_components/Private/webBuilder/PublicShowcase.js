@@ -3,14 +3,12 @@ import async from 'q'
 import { connect } from "react-redux";
 
 import axios from "axios";
-import { Descriptions, Badge , notification , Modal} from 'antd';
-
 import TemporaryDrawer from '../Sidebar/SideNav'
 
-import EmailBuilder from './store/email'
+import EmailBuilder from './store/webCreator'
 import  PageDemo from './store/Preview'
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 
 
@@ -22,7 +20,7 @@ export default class buyerTemplateView extends Component{
     }
 
 
-        getWebsiteData = async(token)=>{
+        getWebsiteData = async()=>{
          const page_id = this.props.match.params.pageID    
          
          const endpoint = host + `/management/open-vendor-temp/${page_id}`
@@ -31,11 +29,14 @@ export default class buyerTemplateView extends Component{
           .then(res=>{
               if (res.status == 200){
                 this.setState({
-                     pageData:res.data['previewHTML']
+                     pageData:res.data['vendorSite']
                 })
                 //alert('3dedioji')
                 console.log('i work')
-                console.log('the page Data',res.data['previewHTML'])
+                console.log('the page Data',res.data)
+                const a = res.data['vendorSite']
+                console.log(a)
+
               }else{
 
               }

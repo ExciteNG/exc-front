@@ -10,7 +10,7 @@ import { InboxOutlined } from '@ant-design/icons';
 
 import FundingDetailTableDrag from './Tables/FundingDetailTable'
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 class AdminLoanDDetailsView extends Component{
     state = {

@@ -1,16 +1,14 @@
 .base-card{
-    padding-top: 40px;
+    padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 0px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    box-sizing: inherit;
+    padding-bottom: 10px;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     border-radius: 5px;
-    margin: 2px 2px 2px 2px;
+    margin: 2px 20px 20px 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    height: 400px;
 }
 
 .orders-card{

@@ -1,15 +1,3 @@
-
-@media only screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
-  }
-}
-
-
-
-
-
-
 .priceCard-container {
   padding: 4px;
   margin: 4px;
@@ -68,7 +56,7 @@
   padding: 0;
 
   text-align: center;
-  color: #7856ff;
+  color: rgb(6, 155, 38);
   padding: 0 20px;
 }
 
@@ -99,7 +87,7 @@
 }
 
 .price-content-button {
-  background-color: rgb(6, 131, 12);
+
   border-color: #fff;
   font-weight: 500;
   font-size: 16px;
@@ -113,8 +101,30 @@
   width: 100%;
   max-width: 247px;
   margin-top: 20px;
-  
-  background-color: #7856ff;
+  background-color: rgb(6, 155, 38);
   color: #fff;
   
 }
+
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+
+  .priceCard-container ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .priceCard-Box{
+
+    padding: 0px 0px 0px 0px;
+  }
+
+}
+

@@ -23,7 +23,6 @@ import { faTrash, faHamburger } from "@fortawesome/free-solid-svg-icons";
 const useStyles = makeStyles({
   table: {
     minWidth: 650,
-    display:' inline !important'
   },
 });
 
@@ -37,7 +36,7 @@ const  openNotification = (msg) => {
     });
     }
 
-var host = 'https://backend-entr.herokuapp.com'
+var host = 'http://127.0.0.1:8000'
 
 export default function CampaignTableDrag(props) {
   const classes = useStyles();

@@ -16,7 +16,7 @@ import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/ico
 const { Meta } = Card; 
 const { TabPane } = Tabs;
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 const users_post_detail_url = host + '/stream/view_post_contents/'
 const user_delete_post_url = host + '/stream/delete_post/'
 
@@ -51,7 +51,7 @@ class User_Post_Conent extends Component{
             "Content-Type": "application/json",
             Authorization: `Token ${token}`
           };
-        axios.get(endpoint + `${this.model_id}/`)
+        axios.get(endpoint)
         .then(res =>{
             this.setState({
                 post_detail : res.data
@@ -79,7 +79,7 @@ class User_Post_Conent extends Component{
 
     Get_Comments = () =>{
       const model_id = this.model_id
-       axios.get(`https://backend-entr.herokuapp.com/retail/vendor-uploads-comments/${model_id}/`)
+       axios.get(`http://127.0.0.1:8000/retail/vendor-uploads-comments/${model_id}/`)
       .then(res =>{
           this.setState({
               productsComments : res.data ,
@@ -96,7 +96,7 @@ class User_Post_Conent extends Component{
         "Content-Type": "application/json",
         Authorization: `Token ${token}`
       };
-      await axios.get(`https://backend-entr.herokuapp.com/core_api/post_rating/${parse_id}/`)
+      await axios.get(`http://127.0.0.1:8000/core_api/post_rating/${parse_id}/`)
       .then( res =>{
         const ra = res.data['Rating']
         this.setState({
@@ -112,7 +112,7 @@ class User_Post_Conent extends Component{
         "Content-Type": "application/json",
         Authorization: `Token ${token}`
       };
-      await axios.get(`https://backend-entr.herokuapp.com/stream/quotations/${parse_id}/`)
+      await axios.get(`http://127.0.0.1:8000/stream/quotations/${parse_id}/`)
       .then( res =>{
         this.setState({
           quotes : res.data
@@ -222,7 +222,7 @@ class User_Post_Conent extends Component{
                             <Rate disabled defaultValue={rating} />
                           </div>
                         <div className="description-card-text">
-                          {post_detail.GigDescription}
+                          {post_detail.Description}
                         </div>
                       </div>
             

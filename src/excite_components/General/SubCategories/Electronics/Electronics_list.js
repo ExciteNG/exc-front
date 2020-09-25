@@ -6,7 +6,7 @@ import {
     Form,
     Select,
     Input,
-    Button, 
+     
   } from "antd";
  
 //import Nav from '../../../containers/nav'
@@ -22,7 +22,7 @@ const Search = Input.Search;
 const { Option } = Select;
 
 
-const host = 'https://backend-entr.herokuapp.com';
+const host = 'http://127.0.0.1:8000';
 const slug = 'electronics'
 
 const Brands = ['','LG','Samsung','Sony', 'Hi-Sense']
@@ -116,15 +116,18 @@ class Electronics_Items extends Component{
         return(
             <>
         <ExciteNav/>
-
+ 
 <div
-    style={{paddingTop:50}}
+    
     className="container mx-auto ">
-            <div className="grid grid-cols-8 gap-4  mx-auto">
+            <div className="productListing-flex">
         
   
-          <div className="col-span-8  sm:col-span-8  md:col-span-8 lg:col-span-2 xl:col-span-2">
-                <Form  onFinish={this.Search_Query}>
+          <div className="left">    
+                <div className ="form-box">
+                <Form 
+                className="form-box-width"
+                onFinish={this.Search_Query}>
                   <Form.Item>
                   
                 </Form.Item>
@@ -211,11 +214,9 @@ class Electronics_Items extends Component{
                   </Form.Item>
                 </Form>
           
-                   
-
+                </div>
           </div>
-          <div className=" mx-3 col-span-8  sm:col-span-8
-                md:col-span-8 lg:col-span-6 xl:col-span-6 gap-3">
+          <div className="right">
                   {
                   show_results ?(
                     <Uploaded_Post slug_class={slug}  Items={items}/>

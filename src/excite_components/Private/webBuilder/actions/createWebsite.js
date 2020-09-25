@@ -3,14 +3,13 @@ import async from 'q'
 import { connect } from "react-redux";
 
 import axios from "axios";
-import { Descriptions, Badge , notification , Modal} from 'antd';
 
 import TemporaryDrawer from '../../Sidebar/SideNav'
 
-import EmailBuilder from '../store/email'
+import EmailBuilder from '../store/webCreator'
 import  Preview from '../store/Preview'
 
-const host = 'https://backend-entr.herokuapp.com';
+const host = 'http://127.0.0.1:8000';
 
 class createSection extends Component{
     state = {
@@ -69,7 +68,7 @@ class createSection extends Component{
                                <div className="main">
                                <div className="fitter">
                                  
-                                    <div className="single-grid">
+                                    <div className="">
                                     <EmailBuilder 
                                     props={this.props}
                                     token={this.props.token}/>

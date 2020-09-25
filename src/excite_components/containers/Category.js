@@ -1,19 +1,16 @@
 import React , { createElement, useState } from "react";
 import axios from  'axios';
-import { connect } from "react-redux";
-
+// import { connect } from "react-redux";
 
 import {Row, Col ,Form, Input, InputNumber,Card,
-     Select,
+     Select, } from 'antd';
      
-    } from 'antd';
-     
-import { MessageOutlined, LikeOutlined, StarOutlined, LoadingOutlined  } from '@ant-design/icons'
-import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import renderEmpty from "antd/lib/config-provider/renderEmpty";
+// import { MessageOutlined, LikeOutlined, StarOutlined, LoadingOutlined  } from '@ant-design/icons'
+// import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
+// import renderEmpty from "antd/lib/config-provider/renderEmpty";
 const { Meta } = Card; 
 
-const category_url = 'https://backend-entr.herokuapp.com/core_api/category_list/'
+const category_url = 'http://127.0.0.1:8000/core_api/category_list/'
 
 const IconText = ({ icon, text }) => (
     <span>

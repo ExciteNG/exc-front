@@ -6,7 +6,7 @@ import {Rate} from 'antd'
 import {EnvironmentOutlined ,TeamOutlined, CreditCardOutlined} from '@ant-design/icons'
  
 
-const host = "https://backend-entr.herokuapp.com"
+const host = "http://127.0.0.1:8000"
 export default class Products extends React.Component {
 
 

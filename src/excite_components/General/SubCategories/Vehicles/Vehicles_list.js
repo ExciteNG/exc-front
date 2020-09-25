@@ -22,7 +22,7 @@ const { Option } = Select;
 
 
 
-const host = 'https://backend-entr.herokuapp.com';
+const host = 'http://127.0.0.1:8000';
 const slug = 'vehicles'
 
 const vehicle_model = ['Audi','Honda','BMW','Bentley', 'Ferrari']

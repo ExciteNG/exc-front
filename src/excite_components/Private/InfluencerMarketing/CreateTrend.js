@@ -19,7 +19,7 @@ const dateFormat = 'YYYY/MM/DD';
 const monthFormat = 'YYYY/MM';
 
 
-const host = "https://backend-entr.herokuapp.com"
+const host = "http://127.0.0.1:8000"
 
 
 const openNotification = (msg) => {
@@ -209,7 +209,7 @@ class NewTrend extends Component {
       
 
   CreateCampaign = async(values) =>{
-        alert('erioo')
+        // alert('erioo')
         console.log(values['CampaignContent'])
         let ca1 = values['CampaignContent']
 

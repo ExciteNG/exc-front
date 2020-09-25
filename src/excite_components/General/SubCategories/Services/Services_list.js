@@ -24,7 +24,7 @@ const { Option } = Select;
 
 
 
-const host = 'https://backend-entr.herokuapp.com';
+const host = 'http://127.0.0.1:8000';
 const slug = 'services'
 
 const Brands = ['LG','Samsung','Sony', 'Hi-Sense']
@@ -116,7 +116,7 @@ class Services_Item extends Component{
 <div
     style={{paddingTop:50}}
     className="container mx-auto ">
-            <div className="grid grid-cols-8 gap-4  mx-auto">
+            <div className="productListing-flex">
         
   
           <div className="col-span-8  sm:col-span-8  md:col-span-8 lg:col-span-2 xl:col-span-2">

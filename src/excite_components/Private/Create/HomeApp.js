@@ -9,7 +9,7 @@ import { connect } from "react-redux";
 
 import TemporaryDrawer from '../Sidebar/SideNav'
 
-const UserPost_url = 'https://backend-entr.herokuapp.com/stream/view_post/'
+const UserPost_url = 'http://127.0.0.1:8000/stream/view_post/'
 
 
 const TextArea = Input.TextArea
@@ -39,7 +39,7 @@ const openNotification = (msg) => {
 }
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 
 const Applicanes = ['Kitchen Wares','Air Conditon','Lighiting']
 
@@ -154,7 +154,7 @@ class HomeApp_Item_Create extends Component{
                     <div className="">
                         <Form 
                         className="form-box-width"
-                        {...formItemLayout}
+                        
                          onFinish={this.Create_Query}>
                             
                 

@@ -9,7 +9,7 @@ import NewFooter from '../newHome/footer'
 
 
 
-const host = 'https://backend-entr.herokuapp.com'
+const host = 'http://127.0.0.1:8000'
 export default class PaymentSuccessPage extends Component{
     state = {
 

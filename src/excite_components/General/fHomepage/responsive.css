@@ -2,13 +2,6 @@
 /* Half Header */
 
 
-.new-container{
-  width: 100%;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /* Half Contents */
 .half-flex {
     display: grid;

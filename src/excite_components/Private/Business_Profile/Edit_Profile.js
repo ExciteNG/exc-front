@@ -34,7 +34,7 @@ class Profile_Edit extends Component{
     })
   };
   updateProfile = (values,err) =>{
-    const host = 'https://backend-entr.herokuapp.com'
+    const host = 'http://127.0.0.1:8000'
           const First_Name =  
           values["First_Name"] === undefined ? null : values["First_Name"] ;
           const Last_Name =  
@@ -43,6 +43,7 @@ class Profile_Edit extends Component{
               values['Email'] === undefined ? null : values['Email'] ;
           const Phone = 
             values['Phone'] === undefined ? null : values['Phone'] ;
+          const BusinessName = values['BusinessName']
 
           const Address = 
             values['Address'] === undefined ? null : values['Address'] ;
@@ -67,6 +68,7 @@ class Profile_Edit extends Component{
             fd.append('Profile_Picture', Profile_Picture);
            fd.append('First_Name', First_Name);
            fd.append('Last_Name',Last_Name);
+           fd.append('BusinessName' ,BusinessName)
            fd.append('Email', Email);
            fd.append('Phone', Phone);
            fd.append('Address', Address);
@@ -81,7 +83,7 @@ class Profile_Edit extends Component{
 
               axios.defaults.xsrfHeaderName = "X-CSRFTOKEN";
               axios.defaults.xsrfCookieName = "csrftoken";
-              axios.post(`https://backend-entr.herokuapp.com/stream/edit_profile/`,fd, {
+              axios.post(`http://127.0.0.1:8000/stream/edit_profile/`,fd, {
                 headers : {
                   "Content-Type": "multitype/form-data",
                   Authorization: `Token ${this.props.token}`
@@ -167,6 +169,16 @@ class Profile_Edit extends Component{
                         />
                       
                     </Form.Item>
+
+                    <Form.Item name ='BusinessName'> 
+                    
+                    <Input
+                      placeholder="Your Business Name"
+                      enterButton
+                    />
+                  
+                </Form.Item>
+
                     <Form.Item name ='Email'> 
                     
                         <Input
