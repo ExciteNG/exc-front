@@ -277,7 +277,6 @@ const PageRouter = () => (
     {/*MarketPlace here */}
     <Route exact path="/upload" component={All_Uploads} />{" "}
     <Route exact path="/market/" component={All_Post} />{" "}
-    {/* <Route exact path="/showcase/" component={NewHome} />{" "} */}
     <Route exact path="/search_query/:Title/" component={Basic_Query} />{" "}
     <Route
       exact

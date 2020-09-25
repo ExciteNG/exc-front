@@ -6,8 +6,9 @@ import { Form, Input, Select, message, notification } from "antd";
 import { NavLink } from "react-router-dom";
 import * as actions from "../store/actions/auth";
 import 'antd/dist/antd.css';
-import NewFooter from "../excite_components/General/newHome/footer";
 import ExciteNav from '../excite_components/General/sections/nav'
+import Footer from "../excite_components/General/sections/footer";
+
 
 const FormItem = Form.Item
 
@@ -273,7 +274,7 @@ class completeProfile extends React.Component{
             </div>
             </div>
 
-            <NewFooter/>
+            <Footer/>
 
             </>
         )

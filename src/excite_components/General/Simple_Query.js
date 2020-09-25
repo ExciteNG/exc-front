@@ -3,9 +3,9 @@ import { Link, withRouter } from 'react-router-dom';
 import axios from "axios";
 
 import {Rate} from 'antd'
-import NewFooter from './newHome/footer';
 //import Uploaded_Post from './Items'
 import ExciteNav from './sections/nav'
+import Footer from './sections/footer';
 
 const host = 'http://127.0.0.1:8000'
 const search_url = host + `/retail/search-item/`
@@ -104,7 +104,7 @@ export default class Basic_Query  extends Component {
           </div>          
                </div>
 
-                <NewFooter/>
+                <Footer/>
             </>
         )
     }

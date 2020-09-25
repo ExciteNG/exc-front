@@ -6,8 +6,8 @@ import { connect } from "react-redux";
 import Logo from '../assets/img/ExciteLogo.png'
 
 import * as actions from "../store/actions/auth";
-import NewFooter from "../excite_components/General/newHome/footer";
 import ExciteNav from '../excite_components/General/sections/nav'
+import Footer from "../excite_components/General/sections/footer";
 
 
 
